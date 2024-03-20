@@ -19,7 +19,8 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 /**
- *
+ * Class Customer reference à la table customer de la base de donné
+ * 
  * @author PC
  */
 @Entity

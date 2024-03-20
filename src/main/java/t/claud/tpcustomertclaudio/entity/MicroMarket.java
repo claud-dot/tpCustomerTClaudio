@@ -21,7 +21,8 @@ import java.io.Serializable;
 import java.util.Collection;
 
 /**
- *
+ * Class MicroMarket reference à la table micro_market de la base de donné
+ * 
  * @author PC
  */
 @Entity

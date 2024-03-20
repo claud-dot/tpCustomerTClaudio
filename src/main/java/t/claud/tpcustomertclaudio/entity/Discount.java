@@ -22,7 +22,8 @@ import java.math.BigDecimal;
 import java.util.Collection;
 
 /**
- *
+ * Class Discount reference à la table discount de la base de donné
+ * 
  * @author PC
  */
 @Entity
