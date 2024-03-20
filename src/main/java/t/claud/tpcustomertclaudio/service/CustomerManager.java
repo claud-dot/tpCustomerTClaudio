@@ -30,6 +30,7 @@ public class CustomerManager {
 
     /**
      * Methode pour faire l'insertion d'une customer
+     * @param customer
      */
     @Transactional
     public void persist(Customer customer) {
@@ -38,6 +39,7 @@ public class CustomerManager {
     
     /**
      * Methode pour faire une selection ou avoire de tous les customer
+     * @return 
      */
     public List<Customer> getAllCustomers() {
         Query query = em.createNamedQuery("Customer.findAll");
