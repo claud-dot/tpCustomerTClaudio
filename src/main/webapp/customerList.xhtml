@@ -56,7 +56,7 @@
                 </p:column>
 
                 <p:column filterBy="#{item.state}"
-                          sortBy="#{item.state}">
+                          sortBy="#{item.state;item.city}">
                     <f:facet name="header">
                         <h:outputText value="Etat"/>
                     </f:facet>
