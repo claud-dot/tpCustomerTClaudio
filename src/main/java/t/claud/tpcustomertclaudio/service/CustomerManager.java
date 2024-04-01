@@ -17,11 +17,9 @@ import t.claud.tpcustomertclaudio.entity.Customer;
  *
  * @author PC
  */
-
 /**
  * Gère la persistance des Customers.
-*/
-
+ */
 @RequestScoped
 public class CustomerManager {
 
@@ -30,22 +28,24 @@ public class CustomerManager {
 
     /**
      * Methode pour faire l'insertion d'une customer
+     *
      * @param customer
      */
     @Transactional
     public void persist(Customer customer) {
         em.persist(customer);
     }
-    
+
     /**
      * Methode pour faire une selection ou avoire de tous les customer
-     * @return 
+     *
+     * @return
      */
     public List<Customer> getAllCustomers() {
         Query query = em.createNamedQuery("Customer.findAll");
         return query.getResultList();
     }
-    
+
     /**
      * Methode pour faire la modification sur une customer specifié
      */
@@ -54,4 +54,7 @@ public class CustomerManager {
         return em.merge(customer);
     }
 
+    public Customer findById(int idCustomer) {
+        return em.find(Customer.class, idCustomer);
+    }
 }
