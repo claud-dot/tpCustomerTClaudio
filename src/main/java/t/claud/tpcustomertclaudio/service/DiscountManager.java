@@ -29,9 +29,14 @@ public class DiscountManager {
     /**
      * Retourne la liste de tous les Discount.
      */
-    public List<Discount> getAllDiscounts(){
-         Query query = em.createNamedQuery("Discount.findAll");
-         return query.getResultList();
-     }
+    public List<Discount> getAllDiscounts() {
+        Query query = em.createNamedQuery("Discount.findAll");
+        return query.getResultList();
+    }
+
+    public List<Discount> getAllDiscountsDesc() {
+        Query query = em.createNamedQuery("Discount.findAllOrderAsc");
+        return query.getResultList();
+    }
 
 }

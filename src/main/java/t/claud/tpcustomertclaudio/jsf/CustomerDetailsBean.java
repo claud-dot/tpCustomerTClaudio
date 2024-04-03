@@ -71,5 +71,9 @@ public class CustomerDetailsBean implements Serializable {
     public List<Discount> getDiscounts() {
         return discountManager.getAllDiscounts();
     }
+    
+    public List<Discount> getDiscountsOrderDesc() {
+        return discountManager.getAllDiscountsDesc();
+    }
 
 }
